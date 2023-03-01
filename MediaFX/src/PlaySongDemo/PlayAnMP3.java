@@ -28,7 +28,7 @@ public class PlayAnMP3 extends Application {
   @Override
   public void start(Stage stage) throws Exception {
     BorderPane pane = new BorderPane();
-    // Dominic Richard Accessed
+    // Dominic Richard accessed and changed song to play
     String path = "songfiles/DanseMacabreViolinHook.mp3";
     pane.setCenter( new Label(path));
     playASong(path);
@@ -52,6 +52,7 @@ public class PlayAnMP3 extends Application {
     mediaPlayer.play();
       
     mediaPlayer.setOnEndOfMedia(new Waiter());
+    // Dominic Richard commented here as well
     System.out.println("You may need to shut this App down");
  
     }
